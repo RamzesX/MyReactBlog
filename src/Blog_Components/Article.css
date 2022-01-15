@@ -1,0 +1,22 @@
+article {
+    width: 90%;
+    height: 250px;
+    margin-bottom: 5px;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  
+  .poboczne {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .poboczne > img {
+    max-width: 150px;
+    max-height: 150px;
+    align-self: center;
+    padding-left: 20px;
+    
+  }

@@ -1,0 +1,21 @@
+#flex {
+    display: flex;
+    justify-content: space-around;
+    max-height: 200px;
+    margin-bottom: 5px;
+  }
+  
+  #flex > img {
+    min-width: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #border {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-bottom: solid 1px grey;
+    transform: rotate(0.2deg);
+    position: relative;
+  }

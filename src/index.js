@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Heading from './App';
+import Header from './Blog_Components/Header.js';
+import Flex from './Blog_Components/Flex';
+import Posts from './Blog_Components/Posts.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Heading />
-    <Heading />
+    <Header />
+    <Flex />
+    <Posts />
   </React.StrictMode>,
   document.getElementById('root')
 );

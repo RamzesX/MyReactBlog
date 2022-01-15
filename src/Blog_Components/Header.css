@@ -109,7 +109,7 @@ header li:hover{
 }
 
 #menu {
-  background-image: url("./images/ramka.svg");
+  background-image: url("../images/ramka.svg");
   padding-left: 0;
   background-size: cover;
   width: 25px;
@@ -129,7 +129,7 @@ header li:hover{
 }
 
 #lupka {
-  background-image: url("./images/Search.svg");
+  background-image: url("../images/Search.svg");
   background-size: cover;
   width: 25px;
   height: 25px;
