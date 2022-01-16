@@ -1,0 +1,38 @@
+#Nothing {
+    margin-top: 50px;
+}
+
+#numerki{
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #numerki span{
+    display: inline-block;
+  }
+  
+  .klikniety{
+    font-weight:650;
+  }
+  
+  #numerki span:hover {
+    cursor: pointer;
+    transform: translateY(-3px); 
+  }
+
+  @media screen and (max-width: 790px) {
+  
+    #numerki {
+      position: relative;
+      top: -10px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    #numerki {
+      position: relative;
+      top: -10px;
+    }
+  }

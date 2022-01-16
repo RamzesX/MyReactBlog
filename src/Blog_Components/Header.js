@@ -9,7 +9,6 @@ class Header extends react.Component {
       <header>
       <div id="buttony"> 
         <button onClick={() => {window.location.replace('./create.html')}} id ="menu"></button>
-        <button onClick={() => {window.location.replace('./posts.html')}} id ="lupka"> </button>
       </div>
   
       <div id="header">
@@ -23,7 +22,7 @@ class Header extends react.Component {
       </div>
   
       <div id="kontener-sub">
-      <a href="#popup1"> <button id="sub">Subscribe</button> </a>
+      <a href="#popup1"> <button id="sub">Contact Me</button> </a>
       </div>
     </header> 
     )

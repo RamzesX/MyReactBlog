@@ -1,4 +1,6 @@
 import './Article.css';
+import './Hot.css';
+import Article from './Article';
 const react = require("react");
 
 
@@ -6,30 +8,24 @@ class Posts extends react.Component {
 
   render() {
     return (
-        <section id="glowny_kontener">
+        <section id="Hot">
             <div id="po_lewej">
+                <h2 className="naglowek">Boring Things</h2>
+                <Article/>
+                <Article/>
                 <Article/>
             </div>
             <div id="po_prawej">
+                <div id="po_prawej_wrapper">
+                    <h2 className="naglowek">Something More</h2>
+                    <Article/>
+                    <Article/>
+                </div>
+                <div id ="border3"></div>
             </div>
         </section>
     )
   }
-}
-
-class Article extends react.Component {
-    render () {
-        return (
-        <article className="poboczne">
-          <img alt="obrazek" className="poboczne_img" src={require('../images/java.png').default}/>
-          <div className="wrapper5"> 
-            <h3> <a href="./post.html"> Javascript event loop </a></h3> 
-            <h6> Written by <i>Norbert Marchewka </i> at <b> 22:35 11.23.2016r </b> </h6> 
-            <p> Box na pare linijek tresci posta </p>
-          </div>
-        </article>
-        )
-    }
 }
 
 

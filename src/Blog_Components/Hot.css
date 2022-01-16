@@ -1,0 +1,79 @@
+#Hot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10px;
+    overflow: hidden;
+  }
+
+  .naglowek {
+    text-align: center;
+  }
+
+
+  #po_lewej {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-left: 10%;
+    display: grid;
+  }
+
+  #po_prawej {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column: 2/2;
+    margin-right: 10%;
+  }
+
+  #po_prawej_wrapper {
+    grid-column: 2/2;
+    display: grid;
+  }
+
+
+  #border3 {
+    grid-column: 1/1;
+    grid-row: 1/ 1;
+    height: 100%;
+    border-left: solid 1px black;
+    margin-right: 0px;
+    margin-left: 0px;
+    position: relative;
+    top: 20px;
+  }
+
+
+  @media screen and (max-width: 790px) {
+    
+    #Hot {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 10px;
+      overflow: hidden;
+    }
+  
+    #po_prawej {
+      grid-column: 1/1;
+      grid-row: 2/2;
+      margin-right: 0%;
+    }
+  
+    #po_lewej {
+      margin-left: 0%;
+    }
+  
+    #border3 {
+      grid-column: 0/0;
+      grid-row: 0/0;
+      height: 0%;
+      border-left: none;
+      margin-left: 0px;
+      margin-right: 0px;
+      visibility: hidden;
+    }
+  
+    #po_prawej_wrapper {
+      width: 100%;
+      margin-left: 0px;
+    }
+   
+  }

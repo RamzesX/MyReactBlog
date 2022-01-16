@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Header from './Blog_Components/Header.js';
 import Flex from './Blog_Components/Flex';
 import Posts from './Blog_Components/Posts.js';
+import Nothing from './Blog_Components/Nothing.js';
+import Footer from './Blog_Components/Footer.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -10,6 +12,8 @@ ReactDOM.render(
     <Header />
     <Flex />
     <Posts />
+    <Nothing />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

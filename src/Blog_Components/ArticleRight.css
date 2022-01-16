@@ -1,0 +1,108 @@
+article {
+    width: 80%;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  
+    border: 3px solid #333333;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    position: relative;
+  }
+
+  article.poboczneright {
+    flex-direction: row-reverse;
+  }
+  
+    article::before {
+      content: "";
+      border: 2px solid #353535;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+      border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+      z-index: -1;
+  }
+  article {
+    width: 90%;
+    height: 250px;
+    margin-bottom: 5px;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  
+  .poboczneright {
+      display: flex;
+      justify-content: flex-start;
+  }
+    
+  .poboczneright > img {
+      max-width: 150px;
+      max-height: 150px;
+      align-self: center;
+      padding-left: 20px;
+      margin-right: 40px;
+      
+  }
+  
+    .wrapper5right {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto 30px 1fr;
+      width: 100%;
+      padding-left: 8%;
+      padding-right: 10px;
+      margin-left: 7%;
+      margin-top: 40px;
+    }
+  
+    .wrapper5right > h6 {
+      grid-column: 1 / 1;
+      grid-row: 2/2;
+      margin: 0;
+      padding-right: 10px;
+    }
+  
+    .wrapper5right> h3 {
+      grid-column: 1 / 1;
+      grid-row: 1/1;
+      margin-bottom: 5px;
+      padding-right: 10px;
+    }
+    
+    .wrapper5right > p {
+      grid-column: 1 / 2;
+      grid-row: 3/3;
+      overflow: hidden;
+      padding: 5px 5px;
+    }
+
+  
+    @media screen and (max-width: 1110px) {
+      .wrapper5right {
+        padding-left: 0;
+      }
+    
+      .poboczneright > img {
+        max-width: 120px;
+        max-height: 100px;
+        margin-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: 790px) {
+  
+      .wrapper5right {
+        padding-left: 8%;
+      }
+    
+    }
+
+    
