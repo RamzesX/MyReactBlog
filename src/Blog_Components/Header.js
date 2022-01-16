@@ -8,7 +8,7 @@ class Header extends react.Component {
     return (
       <header>
       <div id="buttony"> 
-        <Link to="post">
+        <Link to="/post">
         <button id ="menu">
         </button>
         </Link>

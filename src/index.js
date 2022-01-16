@@ -14,12 +14,14 @@ ReactDOM.render(
     <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<MainPage />} />
-      <Route exact path="post" element={<PostyKategorii />} />
+      <Route exact path="/post" element={<PostyKategorii />} />
     </Routes>
   </BrowserRouter>,
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
