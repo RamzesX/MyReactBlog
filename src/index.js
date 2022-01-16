@@ -1,19 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Blog_Components/Header.js';
-import Flex from './Blog_Components/Flex';
-import Posts from './Blog_Components/Posts.js';
-import Nothing from './Blog_Components/Nothing.js';
-import Footer from './Blog_Components/Footer.js';
+import MainPage from './Blog_Components/MainPage.js';
+import PostyKategorii from './Blog_Components/PostyKategorii.js';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Flex />
-    <Posts />
-    <Nothing />
-    <Footer />
+    <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<MainPage />} />
+      <Route exact path="post" element={<PostyKategorii />} />
+    </Routes>
+  </BrowserRouter>,
   </React.StrictMode>,
   document.getElementById('root')
 );

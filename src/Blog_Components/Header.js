@@ -1,14 +1,17 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 const react = require("react");
 
 
 class Header extends react.Component {
-
   render() {
     return (
       <header>
       <div id="buttony"> 
-        <button onClick={() => {window.location.replace('./create.html')}} id ="menu"></button>
+        <Link to="post">
+        <button id ="menu">
+        </button>
+        </Link>
       </div>
   
       <div id="header">

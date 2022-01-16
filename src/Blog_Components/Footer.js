@@ -1,14 +1,13 @@
 import "./Footer.css";
 import React from 'react';
 
-
 class Footer extends React.Component {
 
   render() {
     return (
         <footer>
             <img alt="obrazek" id="girl" src={require('../images/girl.svg').default}/>
-            <div id="content1"> 
+            <div id="content1">
                 <h4>Need Help?</h4>
                 <ol className="klasa">
                     <li> Privacy Policy </li>
