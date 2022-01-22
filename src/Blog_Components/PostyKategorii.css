@@ -1,0 +1,15 @@
+
+
+#kontener {
+margin-top: 30px;
+display: grid;
+grid-template-columns: 1fr 70% 1fr;
+}
+
+#srodek {
+display: grid;
+}
+
+#prawy {
+    margin-right: 50px;
+}

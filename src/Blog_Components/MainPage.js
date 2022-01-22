@@ -11,7 +11,7 @@ class MainPage extends react.Component {
 
   render() {
     return (
-    <div>
+    <div className="highlevel">
     <Header />
     <Flex />
     <Posts />

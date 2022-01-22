@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MainPage from './Blog_Components/MainPage.js';
 import PostyKategorii from './Blog_Components/PostyKategorii.js';
+import Post from './Blog_Components/Post.js';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter,
@@ -14,7 +15,8 @@ ReactDOM.render(
     <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<MainPage />} />
-      <Route exact path="/post" element={<PostyKategorii />} />
+      <Route exact path="/posts" element={<PostyKategorii />} />
+      <Route exact path="/post" element={<Post />} />
     </Routes>
   </BrowserRouter>,
   </React.StrictMode>,
