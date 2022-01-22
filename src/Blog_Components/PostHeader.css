@@ -1,0 +1,54 @@
+#Naglowek{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+#Naglowek h2{
+    font-size: 32px;
+    vertical-align: middle;
+    
+}
+
+#s {
+    align-self: center;
+}
+
+#l {
+    align-self: center;
+}
+
+#p {
+    width: 20%;
+}
+
+#l img {
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    
+}
+
+@media screen and (max-width: 790px) {
+  
+    #Naglowek {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 20px;
+
+    }
+
+    #s {
+        justify-self: center;
+    }
+
+    #l {
+        justify-self: center;
+    }
+
+  
+  }

@@ -2,36 +2,40 @@
     margin-top: 50px;
 }
 
-#numerki{
+.numerki{
     margin: 0 auto;
-    width: 30%;
+    width: 10%;
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
   }
   
-  #numerki span{
+  .numerki li{
     display: inline-block;
   }
   
-  .klikniety{
-    font-weight:650;
-  }
-  
-  #numerki span:hover {
+  .numerki li {
     cursor: pointer;
     transform: translateY(-3px); 
   }
 
+  .selected{
+    font-weight:650;
+    cursor: auto;
+  }
+
   @media screen and (max-width: 790px) {
   
-    #numerki {
+    .numerki {
       position: relative;
       top: -10px;
     }
   }
 
   @media screen and (max-width: 480px) {
-    #numerki {
+    .numerki {
       position: relative;
       top: -10px;
     }

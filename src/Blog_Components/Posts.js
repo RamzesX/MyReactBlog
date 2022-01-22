@@ -6,6 +6,9 @@ const react = require("react");
 
 class Posts extends react.Component {
 
+
+ 
+
   render() {
     return (
         <section id="Hot">
@@ -15,7 +18,7 @@ class Posts extends react.Component {
                 <Article/>
                 <Article/>
             </div>
-            <div id="po_prawej">
+            <div id="po_praswej">
                 <div id="po_prawej_wrapper">
                     <h2 className="naglowek">Something More</h2>
                     <Article/>

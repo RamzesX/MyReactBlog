@@ -17,7 +17,7 @@
     display: grid;
   }
 
-  #po_prawej {
+  #po_praswej {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column: 2/2;
