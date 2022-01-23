@@ -30,7 +30,7 @@ class Posts extends react.Component {
       }
 
       changeContent(pageNumber) {
-        fetch( "http://51.68.142.75:2369/ghost/api/v3/content/posts?key=f854db3727ebf596c066859b88&limit=5&filter=tag:boring&page=" + (pageNumber + 1).toString())
+        fetch("http://51.68.142.75:2369/ghost/api/v3/content/posts?key=f854db3727ebf596c066859b88&limit=5&filter=tag:boring&page=" + (pageNumber + 1).toString())
         .then((res) => res.json())
         .then((json) => {
           var posty2 = this.transformPost(json.posts);

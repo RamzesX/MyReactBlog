@@ -36,7 +36,7 @@ class ListaPostow extends React.Component {
   }
 
   getLength() {
-    fetch( "http://51.68.142.75:2369/ghost/api/v3/content/posts?key=f854db3727ebf596c066859b88f&filter=tag:" + this.getTag(this.state.url))
+    fetch("http://51.68.142.75:2369/ghost/api/v3/content/posts?key=f854db3727ebf596c066859b88&filter=tag:" + this.getTag(this.state.url))
           .then((res) => res.json())
           .then((json) => {
             this.setState({
