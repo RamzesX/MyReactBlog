@@ -51,7 +51,7 @@
       overflow: hidden;
     }
   
-    #po_prawej {
+    #po_praswej {
       grid-column: 1/1;
       grid-row: 2/2;
       margin-right: 0%;
