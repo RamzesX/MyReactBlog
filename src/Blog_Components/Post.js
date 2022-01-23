@@ -14,16 +14,24 @@ class Post extends react.Component {
   constructor(props) {
     super(props);
     this.state = {
+      url: window.location.href,
       html: null,
       title: null,
       image: null
     };
   }
 
+  getId(url) {
+    
+    var id =  url.slice(url.indexOf('id=') + 3);
+    return id;
+
+  }
+
 
   getData() {
     fetch(
-      "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f")
+      "http://localhost:2368/ghost/api/v3/content/posts/" + this.getId(this.state.url) + "?key=38c27c6a3b31a3f1362557957f")
                   .then((res) => res.json())
                   .then((json) => {
                     this.renderHtml(json.posts[0])
@@ -62,7 +70,8 @@ class Post extends react.Component {
   }
 
   componentDidMount() {
-    this.getData()
+    this.getData();
+    window.scrollTo(0,0);
   }
 }
 
