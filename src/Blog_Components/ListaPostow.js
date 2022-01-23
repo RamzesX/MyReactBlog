@@ -1,4 +1,3 @@
-import "./Nothing.css";
 import ArticleLeft from "./ArticleLeft";
 import ArticleRight from "./ArticleRight";
 import React from 'react';
@@ -19,7 +18,7 @@ class PostDescription {
 
  var opisPosta = new PostDescription();
 
-class Nothing extends React.Component {
+class ListaPostow extends React.Component {
   constructor(props) {
     super(props);
     this.handlePageChange = this.handlePageChange.bind(this);
@@ -52,9 +51,11 @@ class Nothing extends React.Component {
       page: pageNumber
     });
     this.changeContent(pageNumber);
-    var element = document.getElementById("Nothing");
+  }
+
+  componentDidUpdate () {
+    var element = document.getElementById("flex");
     element.scrollIntoView();
-  
   }
 
   changeContent(pageNumber) {
@@ -83,8 +84,7 @@ class Nothing extends React.Component {
 
   render() {
     return (
-        <section id="Nothing">
-                <h2 className="naglowek">Nothing Important</h2>
+        <section id="Nothing2">
                 <div id = "left">
                     {!this.state.posty[0].empty ? <ArticleRight post={this.state.posty[0]}/> : null}
                     {!this.state.posty[1].empty ? <ArticleLeft post={this.state.posty[1]}/> : null}
@@ -122,4 +122,4 @@ function PaginatedItems({ itemsPerPage , onPageChange,pageCount2}) {
 
 
 
-export default Nothing;
+export default ListaPostow;
