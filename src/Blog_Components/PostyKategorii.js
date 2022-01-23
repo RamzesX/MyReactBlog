@@ -19,10 +19,6 @@ class PostyKategorii extends react.Component {
     <div id="kontener">
         <div id="prawo"> </div>
         <div id="srodek">
-            <ArticleLeft />
-            <ArticleRight />
-            <ArticleLeft />
-            <ArticleRight />
         </div>
         <div id="lewo"> </div>
     </div>

@@ -32,7 +32,7 @@ class Nothing extends React.Component {
   }
 
   getLength() {
-    fetch( "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f")
+    fetch( "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f&filter=tag:normal")
           .then((res) => res.json())
           .then((json) => {
             this.setState({
@@ -58,7 +58,7 @@ class Nothing extends React.Component {
   }
 
   changeContent(pageNumber) {
-    fetch( "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f&limit=4&page=" + (pageNumber + 1).toString())
+    fetch( "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f&limit=4&filter=tag:normal&page=" + (pageNumber + 1).toString())
     .then((res) => res.json())
     .then((json) => {
       var posty2 = this.transformPost(json.posts);
@@ -66,7 +66,6 @@ class Nothing extends React.Component {
         posty: posty2
       })
     })
-    
   }
 
   transformPost(postarray) {
@@ -74,18 +73,12 @@ class Nothing extends React.Component {
     for (let i = 0; i < postarray.length; i++) {
       tablica[i] = new PostDescription(postarray[i].title, "Norbert Marchewka", postarray[i].published_at, postarray[i].feature_image,postarray[i].excerpt,postarray[i].id, false)
     }
-    //console.log(tablica)
 
     for (let i = 0; i < tablica.length; i++) {
       if (tablica[i] === undefined ) {
-        tablica[i] = new PostDescription();
-      }
+          tablica[i] = new PostDescription(); } 
     }
-    return tablica;
-  }
-
-  isPostEmpty(post) {
-
+    return tablica; 
   }
 
   render() {
