@@ -25,13 +25,18 @@ class ListaPostow extends React.Component {
     this.state = {
       page: 0,
       length: 0,
-      posty: Array(4).fill(opisPosta)
-
+      posty: Array(4).fill(opisPosta),
+      url: window.location.href
     }
   }
 
+  getTag(url) {
+    var tag =  url.slice(url.indexOf('?') + 1);
+    return tag;
+  }
+
   getLength() {
-    fetch( "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f&filter=tag:normal")
+    fetch( "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f&filter=tag:" + this.getTag(this.state.url))
           .then((res) => res.json())
           .then((json) => {
             this.setState({
@@ -41,9 +46,10 @@ class ListaPostow extends React.Component {
   }
 
   componentDidMount () {
+    this.getTag(this.state.url);
     this.getLength();
     this.changeContent(0);
-    //console.log("niestety, ale nadal ida request")
+    
   }
 
   handlePageChange(pageNumber) {
@@ -59,7 +65,7 @@ class ListaPostow extends React.Component {
   }
 
   changeContent(pageNumber) {
-    fetch( "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f&limit=4&filter=tag:normal&page=" + (pageNumber + 1).toString())
+    fetch( "http://localhost:2368/ghost/api/v3/content/posts?key=38c27c6a3b31a3f1362557957f&limit=4&filter=tag:" + this.getTag(this.state.url) +"&page=" + (pageNumber + 1).toString())
     .then((res) => res.json())
     .then((json) => {
       var posty2 = this.transformPost(json.posts);

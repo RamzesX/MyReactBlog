@@ -8,7 +8,7 @@ class Header extends react.Component {
     return (
       <header>
       <div id="buttony"> 
-        <Link to="/posts">
+        <Link to="/posts?normal"  onClick={this.forceUpdate}>
         <button id ="menu">
         </button>
         </Link>
@@ -17,10 +17,10 @@ class Header extends react.Component {
       <div id="header">
         <a href ="/"> <h1> Tech<div id="wrapper"> <img id="rakieta" src={require('../images/rocket.svg').default} alt="obrazek"/> </div>Authority</h1> </a>
         <ul className="lista4" id="lista">
-        <li> <a href="./post.html?post=60f74aecd913fc5d65947f38"> Machine Learning </a> </li>
-        <li> <a href="./post.html?post=60f75099d913fc5d65947f42"> Ai </a> </li>
-        <li> <a href="./post.html?post=6105ace4601befd8f3442a94"> QA  </a> </li>
-        <li> <a href="./post.html?post=60f74526d913fc5d65947f2f"> Internet of Things </a></li>
+        <li><Link to="/posts?ml" onClick={this.forceUpdate} > Machine Learning </Link></li>
+        <li><Link to="/posts?ai" onClick={this.forceUpdate}> Ai </Link></li>
+        <li><Link to="/posts?qa" onClick={this.forceUpdate}> QA  </Link></li>
+        <li><Link to="/posts?iot" onClick={this.forceUpdate}>  Internet of Things </Link></li>
         </ul>
       </div>
   
