@@ -30,8 +30,7 @@ class Post extends react.Component {
 
 
   getData() {
-    fetch(
-      "http://localhost:2368/ghost/api/v3/content/posts/" + this.getId(this.state.url) + "?key=38c27c6a3b31a3f1362557957f")
+    fetch("http://51.68.142.75:2369/ghost/api/v3/content/posts/" + this.getId(this.state.url) + "?key=f854db3727ebf596c066859b88")
                   .then((res) => res.json())
                   .then((json) => {
                     this.renderHtml(json.posts[0])
