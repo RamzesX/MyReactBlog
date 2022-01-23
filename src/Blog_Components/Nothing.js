@@ -44,12 +44,7 @@ class Nothing extends React.Component {
   componentDidMount () {
     this.getLength();
     this.changeContent(0);
-    console.log("niestety, ale nadal ida request")
-  }
-
-  componentDidUpdate(prevProps) {
-    console.log(this.state.posty)
-    //this.changeContent();
+    //console.log("niestety, ale nadal ida request")
   }
 
   handlePageChange(pageNumber) {
@@ -79,7 +74,7 @@ class Nothing extends React.Component {
     for (let i = 0; i < postarray.length; i++) {
       tablica[i] = new PostDescription(postarray[i].title, "Norbert Marchewka", postarray[i].published_at, postarray[i].feature_image,postarray[i].excerpt,postarray[i].id, false)
     }
-    console.log(tablica)
+    //console.log(tablica)
 
     for (let i = 0; i < tablica.length; i++) {
       if (tablica[i] === undefined ) {

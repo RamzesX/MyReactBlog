@@ -4,14 +4,6 @@ const react = require("react");
 
 
 class ArticleRight extends react.Component {
-  constructor(props) {
-    super(props);
-    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  }
-
-  componentDidMount() {
-    console.log(this.props.post.author)
-  }
 
   formatDate(date) {
     return date.slice(0,date.indexOf('T'));
@@ -20,8 +12,7 @@ class ArticleRight extends react.Component {
   getPostId(postUrl) {
     return postUrl;
   }
-
-
+  
     render () {
         return (
         <article className="poboczneright">
