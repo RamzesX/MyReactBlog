@@ -42,7 +42,7 @@ display: grid;
         margin-left: 5px;
     }
     #kontener {
-        grid-template-columns: 1fr 80% 1fr;
+        grid-template-columns: 1fr 90% 1fr;
     }
 
 }
