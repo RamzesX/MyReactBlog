@@ -63,6 +63,7 @@ class Nothing extends React.Component {
         posty: posty2
       })
     })
+    document.getElementById("Nothing").scrollIntoView();
   }
 
   transformPost(postarray) {

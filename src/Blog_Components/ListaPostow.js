@@ -49,7 +49,6 @@ class ListaPostow extends React.Component {
     this.getTag(this.state.url);
     this.getLength();
     this.changeContent(0);
-    
   }
 
   handlePageChange(pageNumber) {
@@ -71,6 +70,7 @@ class ListaPostow extends React.Component {
         posty: posty2
       })
     })
+    document.getElementById("flex").scrollIntoView();
   }
 
   transformPost(postarray) {
