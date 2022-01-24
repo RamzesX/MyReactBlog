@@ -19,7 +19,7 @@ ReactDOM.render(
       <Route exact path="/posts" element={<PostyKategorii />} />
       <Route exact path="/post" element={<Post />} />
     </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
