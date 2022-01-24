@@ -6,7 +6,10 @@
 
 .numerki{
     margin: 0 auto;
-    width: 10%;
+    margin-top: 20px;
+    padding: 0 0 0 0;
+    padding-top: 20px;
+    width: 15%;
     text-align: center;
     margin-top: 20px;
     display: flex;
@@ -15,7 +18,6 @@
   }
   
   .numerki li{
-    display: inline-block;
   }
   
   .numerki li {
@@ -33,6 +35,7 @@
     .numerki {
       position: relative;
       top: -10px;
+      width: 30%;
     }
   }
 
@@ -40,5 +43,6 @@
     .numerki {
       position: relative;
       top: -10px;
+      width: 40%;
     }
   }

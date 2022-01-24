@@ -13,3 +13,36 @@ display: grid;
 #prawy {
     margin-right: 50px;
 }
+
+
+@media screen and (max-width: 480px) {
+
+    article {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        padding-bottom: -5px !important;
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+
+    article p {
+        margin: 0 10px 10px 10px !important;
+        padding: 10px !important;
+        margin-bottom: -5px;
+        display: none;
+    }
+
+    .poboczne_img {
+        margin: 12px 0 0 0 !important;
+        padding: 0 !important;
+
+    }
+    .wrapper5right {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    #kontener {
+        grid-template-columns: 1fr 80% 1fr;
+    }
+
+}

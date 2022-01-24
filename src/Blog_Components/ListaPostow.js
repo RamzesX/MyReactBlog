@@ -60,8 +60,6 @@ class ListaPostow extends React.Component {
   }
 
   componentDidUpdate () {
-    var element = document.getElementById("flex");
-    element.scrollIntoView();
   }
 
   changeContent(pageNumber) {

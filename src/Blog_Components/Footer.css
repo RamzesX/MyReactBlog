@@ -46,6 +46,7 @@ footer {
     footer{
       height: 250px;
       padding-top: 50px;
+      margin-top: 60px;
     }
   }
 
@@ -55,6 +56,7 @@ footer {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       height: auto;
+      margin-top: 30px;
     }
   
     #chlopak {
@@ -108,5 +110,29 @@ footer {
   
     #content2 {
       position: static;
+    }
+
+    #sub {
+      margin-left: -5px;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    #sub {
+      display:none;
+    }
+
+    #menu {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    #sub {
+      display: inline-block;
+    }
+
+    #menu {
+      display: inline-block;
     }
   }

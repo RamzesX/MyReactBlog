@@ -4,6 +4,7 @@ import Posts from './Posts.js';
 import Nothing from './Nothing.js';
 import Footer from './Footer.js';
 import Modal from './Modal.js';
+import './PostyKategorii.css';
 const react = require("react");
 
 

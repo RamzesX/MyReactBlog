@@ -52,9 +52,6 @@ class Nothing extends React.Component {
       page: pageNumber
     });
     this.changeContent(pageNumber);
-    var element = document.getElementById("Nothing");
-    element.scrollIntoView();
-  
   }
 
   changeContent(pageNumber) {
