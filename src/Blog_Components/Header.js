@@ -17,7 +17,7 @@ class Header extends react.Component {
       <div id="header">
         <a href ="/"> <h1> Tech<div id="wrapper"> <img id="rakieta" src={require('../images/rocket.svg').default} alt="obrazek"/> </div>Authority</h1> </a>
         <ul className="lista4" id="lista">
-        <li><Link to="/posts?ml" onClick={this.forceUpdate} > CI/CD nadal! działa </Link></li>
+        <li><Link to="/posts?ml" onClick={this.forceUpdate} > CI/CD nadal! działa ale z SCM! </Link></li>
         <li><Link to="/posts?ai" onClick={this.forceUpdate}> Ai </Link></li>
         <li><Link to="/posts?qa" onClick={this.forceUpdate}> QA  </Link></li>
         <li><Link to="/posts?iot" onClick={this.forceUpdate}>  Internet of Things </Link></li>
