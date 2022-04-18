@@ -14,6 +14,7 @@ pipeline {
                 sh 'set +e'
                 sh 'pm2 start npm -- start'
                 sh 'set -e'
+                
             }
         }
     }
