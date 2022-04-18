@@ -9,8 +9,6 @@ pipeline {
         }
         stage("Install packets") {
             steps {
-                export BUILD_ID=dontKillMe
-                export JENKINS_NODE_COOKIE=dontKillMe
                 sh 'npm install'
                 sh 'npm i react-paginate -save'
                 sh 'set +e'
@@ -18,7 +16,6 @@ pipeline {
                 sh 'pm2 delete npm --force'
                 sh 'pm2 start npm -- start'
                 sh 'set -e'
-                
             }
         }
     }
