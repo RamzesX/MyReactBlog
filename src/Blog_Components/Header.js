@@ -18,8 +18,8 @@ class Header extends react.Component {
         <a href ="/"> <h1> Tech<div id="wrapper"> <img id="rakieta" src={require('../images/rocket.svg').default} alt="obrazek"/> </div>Authority</h1> </a>
         <ul className="lista4" id="lista">
         <li><Link to="/posts?ml" onClick={this.forceUpdate} > Machine Learning </Link></li>
-        <li><Link to="/posts?ai" onClick={this.forceUpdate}> Math </Link></li>
-        <li><Link to="/posts?qa" onClick={this.forceUpdate}> QA  </Link></li>
+        <li><Link to="/posts?math" onClick={this.forceUpdate}> Math </Link></li>
+        <li><Link to="/posts?qa" onClick={this.forceUpdate}> Qa  </Link></li>
         <li><Link to="/posts?iot" onClick={this.forceUpdate}> Internet of Things </Link></li>
         </ul>
       </div>
