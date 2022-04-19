@@ -42,6 +42,12 @@ class Nothing extends React.Component {
   }
 
   componentDidMount () {
+    
+    window.onerror = function (msg, url, line) {
+               alert("Message : " + msg );
+               alert("url : " + url );
+               alert("Line number : " + line );
+    }
     this.getLength();
     this.changeContent(0);
     //console.log("niestety, ale nadal ida request")
