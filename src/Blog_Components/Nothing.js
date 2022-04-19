@@ -32,7 +32,7 @@ class Nothing extends React.Component {
   }
 
   getLength() {
-    fetch( "https://techautority.tech/ghost/api/v3/content/posts?key=f854db3727ebf596c066859b88&filter=tag:normal")
+    fetch( "https://ghost.techautority.tech/ghost/api/v3/content/posts?key=f854db3727ebf596c066859b88&filter=tag:normal")
           .then((res) => res.json())
           .then((json) => {
             this.setState({
