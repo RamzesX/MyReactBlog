@@ -232,7 +232,7 @@ header li:hover{
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 470px) {
 
   #kontener-sub {
     margin-top: 15px;
@@ -251,5 +251,15 @@ header li:hover{
     left: 7px;
     flex-wrap: wrap;
   }
+
+  #sub {
+    display:none;
+  }
+
+  #menu {
+    display: none;
+  }
  
 }
+
+

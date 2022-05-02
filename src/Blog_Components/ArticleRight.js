@@ -12,6 +12,10 @@ class ArticleRight extends react.Component {
   getPostId(postUrl) {
     return postUrl;
   }
+
+  truncate(str, n){
+    return (str.length > n) ? str.substr(0, n-1) + '...' : str;
+  };
   
     render () {
         return (
@@ -20,7 +24,7 @@ class ArticleRight extends react.Component {
           <div className="wrapper5right"> 
             <h3>  <Link  to={{pathname: '/post?id=' + this.getPostId(this.props.post.id) }}>{this.props.post.title} </Link></h3> 
             <h6> Written by <i> {this.props.post.author} </i> at <b> {this.formatDate(this.props.post.date)} </b> </h6> 
-            <p> {this.props.post.description} </p>
+            <p> {this.truncate(this.props.post.description, 150)} </p>
           </div>
         </article>
         )

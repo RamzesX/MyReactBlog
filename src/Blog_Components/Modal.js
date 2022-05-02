@@ -16,7 +16,7 @@ class Modal extends react.Component {
                     For more information about me please visit:
                     <br/>
                     <br/>
-                    https://www.linkedin.com/
+                    <a href="https://www.linkedin.com/in/norbert-marchewka-292377129/">https://www.linkedin.com/in/norbert-marchewka</a>
                 </div>
             </div>
         </div>

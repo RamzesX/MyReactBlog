@@ -111,28 +111,4 @@ footer {
     #content2 {
       position: static;
     }
-
-    #sub {
-      margin-left: -5px;
-    }
-  }
-
-  @media screen and (max-width: 470px) {
-    #sub {
-      display:none;
-    }
-
-    #menu {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 380px) {
-    #sub {
-      display: inline-block;
-    }
-
-    #menu {
-      display: inline-block;
-    }
   }

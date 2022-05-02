@@ -28,15 +28,15 @@ class Footer extends React.Component {
             <img alt="obrazek" id="chlopak" src={require('../images/man3.svg').default}/>
             <div id="dane">
                 <ol id="dane2" className="klasa">
-                    <li> Juliusza Słowackiego 44</li>
-                    <li> 00 - 310 Warszawa </li>
-                    <li> TechAuthority@gmail.com</li>
-                    <li> <span>892 448 654</span> <span> 725 967 297 </span> </li>
+                    <li> Warszawa </li>
+                    <li> 00 - 310 </li>
+                    <li> norbert.marchewka44@gmail.com </li>
+                    <li> <span> 725 967 297 </span> </li>
                     <li> 
                         <div id="social">
-                            <img alt="obrazek" src={require('../images/Linkedin.svg').default}/>
-                            <img alt="obrazek" src={require('../images/Facebook.svg').default}/>
-                            <img alt="obrazek" src={require('../images/YouTube.svg').default}/>
+                        <a href="https://www.linkedin.com/in/norbert-marchewka-292377129/"> <img alt="obrazek" src={require('../images/Linkedin.svg').default}/> </a>
+                        <a href="https://www.linkedin.com/in/norbert-marchewka-292377129/">  <img alt="obrazek" src={require('../images/Facebook.svg').default}/> </a>
+                        <a href="https://www.linkedin.com/in/norbert-marchewka-292377129/">  <img alt="obrazek" src={require('../images/YouTube.svg').default}/> </a>
                         </div>
                     </li>
                 </ol>
