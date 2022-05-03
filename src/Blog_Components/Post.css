@@ -17,13 +17,13 @@
 
 #srodek2 .subheader { font-size: 26px; font-weight: 300; color: #000000; margin: 0 0 24px; }
 
-#srodek2 p { color: #000000; font-family: 'DejaVu Serif', sans-serif; font-size: 16px; line-height: 32px; margin: 0 0 24px; }
+#srodek2 p { color: #000000; font-family: 'DejaVu Serif', sans-serif; font-size: 16px; }
 
 #srodek2 ol { color: #000000; font-family: 'DejaVu Serif', sans-serif; font-size: 16px; line-height: 32px; margin: 0 0 24px; }
 
 #srodek2 ul { color: #000000; font-family: 'DejaVu Serif', sans-serif; font-size: 16px; line-height: 32px; margin: 0 0 24px; }
 
-#srodek2 li { color: #000000; font-family: 'DejaVu Serif', sans-serif; font-size: 16px; line-height: 32px; margin: 0 0 5px; }
+#srodek2 li { color: #000000; font-family: 'DejaVu Serif', sans-serif; font-size: 16px; margin: 0 0 5px; }
 
 
 #srodek2 a { color: #000000 ; text-decoration: underline; }
