@@ -30,7 +30,7 @@ class Footer extends React.Component {
                 <ol id="dane2" className="klasa">
                     <li> Warszawa </li>
                     <li> 00 - 310 </li>
-                    <li> norbert.marchewka44@gmail.com </li>
+                    <li>  </li>
                     <li> <span> 725 967 297 </span> </li>
                     <li> 
                         <div id="social">
