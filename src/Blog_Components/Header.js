@@ -20,7 +20,7 @@ class Header extends react.Component {
         <li><Link to="/posts?ml" onClick={this.forceUpdate} > Machine Learning </Link></li>
         <li><Link to="/posts?math" onClick={this.forceUpdate}> Math </Link></li>
         <li><Link to="/posts?qa" onClick={this.forceUpdate}> QA  </Link></li>
-        <li><Link to="/posts?iot" onClick={this.forceUpdate}> Unix / Linux </Link></li>
+        <li><Link to="/posts?iot" onClick={this.forceUpdate}> Unix / Linux  </Link></li>
         </ul>
       </div>
   
